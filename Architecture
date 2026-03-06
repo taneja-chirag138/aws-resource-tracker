@@ -1,12 +1,16 @@
-Project Workflow
-AWS Cloud
-     ↓
-AWS CLI
-     ↓
-Bash Script
-     ↓
-Cron Job
-     ↓
-Log File
-     ↓
-Email Notification (Gmail SMTP)
+AWS Account
+     │
+     │ (AWS CLI)
+     ▼
+Shell Script (aws_resource_tracker.sh)
+     │
+     │ Collects AWS resource data
+     ▼
+Log File (aws_resource.log)
+     │
+     │ Cron Job runs every 5 minutes
+     ▼
+Mail Service (Postfix / sendmail)
+     │
+     ▼
+Email Sent to Admin
