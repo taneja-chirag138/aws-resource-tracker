@@ -1,0 +1,12 @@
+Project Workflow
+AWS Cloud
+     ↓
+AWS CLI
+     ↓
+Bash Script
+     ↓
+Cron Job
+     ↓
+Log File
+     ↓
+Email Notification (Gmail SMTP)
